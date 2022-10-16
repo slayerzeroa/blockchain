@@ -38,25 +38,6 @@
 						"type": "address"
 					}
 				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
 				"name": "getInfoByWallet",
 				"outputs": [
 					{
@@ -88,19 +69,6 @@
 						"internalType": "uint256",
 						"name": "balance",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "minter",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -181,7 +149,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test2.sol": "status"
+			"SetNSend.sol": "status"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -195,12 +163,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test2.sol": {
-			"keccak256": "0x914c980430bc2fda94f059be7045171966d4f98b4dd4609b7c42235f7ebc38d6",
+		"SetNSend.sol": {
+			"keccak256": "0x694846c1f7edba0359dfcb834082335bd88e020934e71fb561417abfabd5653f",
 			"license": "GPL-30",
 			"urls": [
-				"bzz-raw://2d9a40a1b49f2a6153c636062607b48b3448483e331e4ad16096c304ed06be96",
-				"dweb:/ipfs/QmcWvqAaPZSZrT1Fw4KxycQhK2magamTajDD6g2NwNfYHQ"
+				"bzz-raw://f4ca7acff0aad6aa7ae348607ffac8b2df25b73e14ff8a6ffc6caa6375c8fede",
+				"dweb:/ipfs/QmeuSKKbyUNdECKPaUWWohUchh3pECvSbEwFnywTWasmJJ"
 			]
 		}
 	},
