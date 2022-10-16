@@ -24,7 +24,7 @@ contract status{
     //생성한 Student를 배열로 사용하기 위해 Students라는 배열 선언
     Student[] Students;
 
-    function setStu(string memory _name, uint256 _StudentID, string memory _major, uint256 _gpa, string memory _company) public {
+    function setStu(string memory _name, uint256 _StudentID, string memory _major, uint256 _gpa, string memory _company) public payable{
         Students.push(Student(_name, _StudentID, _major, _gpa, _company, minter));
     }
 
@@ -37,12 +37,12 @@ contract status{
     }
 
 
-    function mint(address receiver, uint amount) public  {
+    function mint(address receiver, uint amount) public payable {
         if (msg.sender != minter) return;
         balances[receiver] += amount;
     }
 
-    function send(address receiver, uint amount) public {
+    function send(address receiver, uint amount) public payable {
         if (balances[msg.sender] < amount) return;
         balances[msg.sender] -= amount;
         balances[receiver] += amount;
