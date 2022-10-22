@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.17+commit.8df45f5f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -28,6 +28,19 @@
 					}
 				],
 				"name": "Sent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "howMuch",
 				"type": "event"
 			},
 			{
@@ -77,17 +90,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "receiver",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
 					}
 				],
-				"name": "send",
+				"name": "sendNow",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -96,7 +104,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_wall",
+						"name": "_addr",
 						"type": "address"
 					},
 					{
@@ -123,11 +131,6 @@
 						"internalType": "string",
 						"name": "_company",
 						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_balance",
-						"type": "uint256"
 					}
 				],
 				"name": "setInfo",
@@ -149,7 +152,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SetNSend.sol": "status"
+			"sendtosend.sol": "status"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -163,12 +166,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"SetNSend.sol": {
-			"keccak256": "0x694846c1f7edba0359dfcb834082335bd88e020934e71fb561417abfabd5653f",
+		"sendtosend.sol": {
+			"keccak256": "0x3882e67ff392667a814b4ddd756a7a544f1c0b216f2f22ffccc9cd918ae34c60",
 			"license": "GPL-30",
 			"urls": [
-				"bzz-raw://f4ca7acff0aad6aa7ae348607ffac8b2df25b73e14ff8a6ffc6caa6375c8fede",
-				"dweb:/ipfs/QmeuSKKbyUNdECKPaUWWohUchh3pECvSbEwFnywTWasmJJ"
+				"bzz-raw://267f053c090b787331bd787208c3ea9825532928c51f17e57a220a5e7de0fbee",
+				"dweb:/ipfs/QmbWXSm7mfdwgpZissGw2vPmnfG72woAtNdxKbKTr8NXiu"
 			]
 		}
 	},
