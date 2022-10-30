@@ -72,6 +72,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "INITIAL_SUPPLY",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -386,11 +399,11 @@
 			]
 		},
 		"pompay_token.sol": {
-			"keccak256": "0x3af07969626b80ecf48c8a1efbaae61182a1311d629e2dac1fbc11d7d992c5d6",
+			"keccak256": "0x11cbbc0c31345dfdf9e3e5d5c57f8318cfcd6ad10d49d37c09f5d66139961d6b",
 			"license": "GPL-30",
 			"urls": [
-				"bzz-raw://24b9cf0cd5e6e3b4764ca298165c0a235eb1ab4e6373615eedbe44f26744a359",
-				"dweb:/ipfs/QmerP8uM6Rw8GgvBBZBgRitucq44AMfK59sEC2F8fEKFiH"
+				"bzz-raw://885b59702eda89c2e5494d04656ce1d95e7a8bc9c274ad19bc3077b503bae8d5",
+				"dweb:/ipfs/QmeWf3LvGaZSkfdvtcM7rEycEPnhjs1EJSY6TB8jaFvEng"
 			]
 		}
 	},
