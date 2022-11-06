@@ -1,4 +1,4 @@
-Life is too short, We need to be an Webermensh.
+Life is too short, We need to be an Webermensch.
 Life is sometimes difficult, We need to win in our life.
 Time is going everyday, We need to understand it.
 
