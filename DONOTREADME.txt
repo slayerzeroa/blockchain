@@ -1,3 +1,10 @@
+Life is too short, We need to be an Webermensh.
+Life is sometimes difficult, We need to win in my life.
+Time is going everyday, We need to understand it.
+
+
+
+
 REMIX DEFAULT WORKSPACE
 
 Remix default workspace is present when:
