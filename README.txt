@@ -1,5 +1,5 @@
 Life is too short, We need to be an Webermensh.
-Life is sometimes difficult, We need to win in my life.
+Life is sometimes difficult, We need to win in our life.
 Time is going everyday, We need to understand it.
 
 
