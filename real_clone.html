@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="ko" class=" js cssanimations js cssanimations"><head><style data-merge-styles="true"></style><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/03bec62d/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/03bec62d/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
 
 <meta charset="utf-8">
@@ -15,12 +17,6 @@
 <meta property="og:type" content="website">
 <meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><link rel="stylesheet" type="text/css" href="./minify_css/vendor_blue_10.css">
 <link rel="stylesheet" type="text/css" href=".minify_css/vendor_red_10.css">
-<!--[if lte IE 9]>
-<link rel='stylesheet' type='text/css' href='https://vendor-cdn.imweb.me/css/site/bootstrap.css?1590627710'/>
-<![endif]-->
-<!--[if lte IE 9]>
-<link rel='stylesheet' type='text/css' href='https://vendor-cdn.imweb.me/css/owl.carousel1.css?1577682282'/>
-<![endif]-->
 <link rel="stylesheet" type="text/css" href="./css/im_component.css">
 <link rel="stylesheet" type="text/css" href="./css/site/alarm_menu.css">
 <link rel="stylesheet" type="text/css" href="./css/function.css">
@@ -36,7 +32,7 @@
 <link rel="stylesheet" type="text/css" href="/css/custom.css">
 <link rel="stylesheet" type="text/css" href="./css/tailwind.css">
 <link rel="stylesheet" type="text/css" href="./css/font-awesome5.min.css">
-<style>@import url("//vendor-cdn.imweb.me/css/gilroy.css"); @import url("//vendor-cdn.imweb.me/css/montserrat.css");
+<style>@import url("https://raw.githubusercontent.com/slayerzeroa/Paran_Hakki/main/css/gilroy.css"); @import url("https://raw.githubusercontent.com/slayerzeroa/Paran_Hakki/main/css/montserrat.css");
 		@media (min-width: 992px){
 			.doz_sys .section_first.visual_section .full_screen_show .owl-theme .item .op,
 			.doz_sys .section_first.visual_section .full_screen_show .owl-theme .item .op .header-content {
@@ -2450,6 +2446,35 @@
 <script src="./js/ramda.min.js"></script>
 <script src="./js/rxjs.umd.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://raw.githubusercontent.com/slayerzeroa/Paran_Hakki/main/js/web3.min.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            if (typeof web3 !== 'undefined') {
+                console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
+                window.web3 = new Web3(web3.currentProvider);
+            } else {
+                console.log('No Web3 Detected... using HTTP Provider')
+                window.web3 = new Web3(new Web3.providers.HttpProvider("https://sepolia.infura.io/v3/9041415e6a4c43d9a9475c8d19a57d0b"));
+            }
+        })
+        function getBalance() {
+            var address, wei, balance
+            address = document.getElementById("address").value
+            try {
+                web3.eth.getBalance(address, function (error, wei) {
+                    if (!error) {
+                        var balance = web3.utils.fromWei(wei, 'ether');
+                        document.getElementById("output").innerHTML = balance + " ETH";
+                    }
+                });
+            } catch (err) {
+                document.getElementById("output").innerHTML = err;
+            }
+        }
+    </script>
+
 <script>
 	var IS_IADMIN = false;
 	var CUSTOM_IMAGE_WIDTH = 1600;
@@ -2493,13 +2518,17 @@
 
 
 
-    <h1>ETH Balance Fetcher</h1>
+		<h1>ETH Balance Fetcher</h1>
     <p>Enter your Ethereum Address:</p>
-    <input type="text" size="50" id="address" autocomplete="off" spellcheck="false" data-ms-editor="true">
-    <button type="button" id="myBalance" autocomplete="off">Get Balance</button>
-    <br>
-    <br>
+    <input type="text" size="50" id="address" />
+    <button type="button" id="myBalance">Get Balance</button>
+    <br />
+    <br />
     <div id="output"></div>
+    <script type="text/javascript">
+    const element = document.getElementById("myBalance");
+    element.addEventListener("click", getBalance);
+    </script>
 
 
 
