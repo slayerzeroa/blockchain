@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Test {
-
+//재코밋
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		  try {
