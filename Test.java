@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Test {
-//재코밋
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		  try {
@@ -31,3 +30,16 @@ public class Test {
 		   }
 
 }
+
+
+// 재코밋 eclipse랑 mysql 연동할 때 eclipse안에 있는 pom.xml에 
+<dependency>   
+
+		  	<groupId>mysql</groupId>   
+		
+		    	<artifactId>mysql-connector-java</artifactId>
+		
+		    	<version>5.1.45</version>
+
+    </dependency>
+ //이 코드 추가해야해요
