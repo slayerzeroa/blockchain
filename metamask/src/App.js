@@ -30,10 +30,11 @@ export default function App() {
   const getBalance = async () => {
     const res = await contract.methods.balanceOf(wallet).call();
     const format = web3.utils.fromWei(res);
-    console.log(format);
-    return format;
+    var z = document.createElement('p');
+    z.innerHTML = "Balance :" + format
+    document.body.appendChild(z);
   }
-  
+
   const handleConnect = () => {
     if (active) {
       deactivate();
@@ -45,18 +46,23 @@ export default function App() {
     });
   };
 
+
   return (
     <div>
       <div className="user">
         <p>Account: {account}</p>
         <p>ChainId: {chainId}</p>
-        <p>Balance: </p>
+
       </div>
       <div className="connect">
-        <button type="button" onClick={handleConnect}>
+        <button type="button" onClick={ () => {
+          handleConnect()
+          getBalance()
+        }}>
           {active ? "disconnect" : "connect"}
         </button>
       </div>
     </div>
   );
+
 }
