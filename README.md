@@ -1,4 +1,6 @@
 Web3 프로젝트: LINKA 졸업생과 재학생의 만남
+Solidity 기반 블록체인 졸업생 데이터 가치화
+
 
 링크: https://ajoulinka.shop/
 
