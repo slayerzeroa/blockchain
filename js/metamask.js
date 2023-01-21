@@ -14,9 +14,9 @@ const getWeb3 = async () => {
   document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("connect_button").addEventListener("click", async () => {
       const web3 = await getWeb3()
-      const walletAddress = await web3.eth.requestAccounts()
-      const walletBalanceInWei = await web3.eth.getBalance(walletAddress[0])
-      const walletBalanceInEth = Math.round(Web3.utils.fromwei(walletBalanceInWei) * 1000) / 1000
+      // const walletAddress = await web3.eth.requestAccounts()
+      // const walletBalanceInWei = await web3.eth.getBalance(walletAddress[0])
+      // const walletBalanceInEth = Math.round(Web3.utils.fromwei(walletBalanceInWei) * 1000) / 1000
 
       // target.setAttribute("hidden", "hidden")
 
