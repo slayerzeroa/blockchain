@@ -1,0 +1,107 @@
+html,
+body {
+  
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.form-signin {
+  width: 380px;
+  padding: 15px;
+}
+.text-center{
+  text-align:center!important;
+}
+.logo_t{
+  color: #29ca8e;
+  font-family:'Tenada';
+  font-size:80px;
+  text-shadow: 
+    -1px 0px black, 
+    0px 1px black, 
+    1px 0px black, 
+    0px -1px black;
+    margin-bottom: 30px;
+}
+.form-floating{
+  position:relative;
+  margin-top: 12px;
+  height: 22px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.ID_Login_wrap{
+  color: black;
+  border:1px solid rgba(112, 110, 110, 0.979);
+  width: 320px;
+  height: 160px;
+  border-radius:5px;
+  padding: 20px 30px;
+}
+
+
+.form-signin input[type="email"] {
+  margin-right: 27px;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.checkbox{
+  border: 4px;
+  font-family:'bitbit';
+  color: #ffffff;
+  text-shadow: 
+    -1px 0px black, 
+    0px 1px black, 
+    1px 0px black, 
+    0px -1px black;
+    margin-top: 10px;
+}
+  
+.form_id{
+  font-family:'bitbit';
+  color: #ffffff;
+  text-shadow: 
+    -1px 0px black, 
+    0px 1px black, 
+    1px 0px black, 
+    0px -1px black;
+}
+.form_pass{
+  font-family:'bitbit';
+  color: #ffffff;
+  text-shadow: 
+    -1px 0px black, 
+    0px 1px black, 
+    1px 0px black, 
+    0px -1px black;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.btn_login{
+  margin: 20px;
+  font-family:'bitbit';
+  margin:0 auto;
+  width: 250px;
+  height: 30px;
+  background-color: #29ca8e;
+  color:#ffffff
+}
+.text-muted{
+  margin-top:150px;
+}
