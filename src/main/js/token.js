@@ -30,7 +30,7 @@ const getBalance = async () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("token_button").addEventListener("click", async () => {
+    document.getElementById("token_balance").addEventListener("click", async () => {
       const tokenBalance = await getBalance()
       console.log(tokenBalance)
       document.getElementById("wallet_balance").innerText = tokenBalance
